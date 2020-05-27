@@ -6,7 +6,7 @@
 <%String[] images = (String[])request.getAttribute("images"); %>
 
 <!--  본문 -->
-<div class="col-md-3 col-md-offset-1 trainers-entry follow" style="padding-top:30px; width: 300px">  
+<div class="col-md-3 col-md-offset-1 trainers-entry follow" style="padding-top:50px; width: 300px">  
 							<img src="${aaa }" style="width: 100%; height: 500px;" />
 							<p style="color: black;">대충 따라오는 메s뉴</p>
 				</div>
@@ -73,7 +73,7 @@
 	$(window)
 			.scroll(
 					function() {
-						//스크롤 따라오는 좌측메뉴
+						//스크롤 따라오는 좌측메뉴 $(window).scrollTop()+30'px' 넣으면 왠진 모르겟는데 애가 미쳐돌아감
 						if ($(window).scrollTop() + 500 < ($(document).height() - $(window).height())) {
 							$('.follow').attr('style',('padding-top :'+ $(window).scrollTop()+'px; width: 300px') );
 						}
