@@ -18,7 +18,6 @@
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/LoginCSS/css/main.css'/>" >  
 <!-- 로그인폼 css링크끝 -->
 	<title>우리 사이트 이름 정해야함</title>
-	
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900" rel="stylesheet">
 	
 	<%-- <c:url value='/resources/images/sumnail.png' /> --%>
@@ -86,30 +85,25 @@
 <script>
 
 $(function(){
-		// $('#myModal').modal("hide"); //모달 닫혔을때
-		//$('#myModal').modal("show");//모달 열렸을때
 		
-		$('#MyMenu').on('click',function(){
-			console.log('마이메뉴클릭');
-			$('#colorlib-offcanvas').hide();
-		});
+		//768
 		
 		
+		$('#myModal').on('hidden.bs.modal', function () {
+			if($(window).width() <= 768) {
+			$('body').addClass('overflow offcanvas');
+			  console.log('모달닫힘')
+			}
+			});
+		$('#myModal').on('show.bs.modal', function () {
+			if($(window).width() <= 768) {
+			$('body').removeClass('overflow offcanvas');
+			  console.log('모달열림')
+			}
+			});
 		
 		
-		
-		
-		/*
-		$('.js-colorlib-nav-toggle').on('click',function(){
-			console.log('열림');
-		});
-		*/
-		
-	
-	
-	
-	
-			
+
 			
 	});
 
