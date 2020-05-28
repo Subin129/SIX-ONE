@@ -6,8 +6,11 @@
 <%String[] images = (String[])request.getAttribute("images"); %>
 
 <!--  본문 -->
-<div class="col-md-3 col-md-offset-1 trainers-entry follow" style="padding-top:50px; width: 300px">  
-							<img src="${aaa }" style="width: 100%; height: 500px;" />
+<div class="col-md-3 col-md-offset-1 trainers-entry follow" style="padding-top:50px; width: 300px;background-color: aqua;">  
+							<h1>글 작성</h1></hr>
+							<h1>검색하기</h1></hr>
+						
+							<h1>어쩌고</h1></hr>
 							<p style="color: black;">대충 따라오는 메s뉴</p>
 				</div>
 		<div class="col-md-6 col-md-offset-1 appendd" style="padding-top: 20px;">
@@ -42,7 +45,7 @@
 
 	var images = Array();
 	//자바코드로 배열받은거 => JS배열로 변환
-	<%for(int i=0;i<10;i++){%>
+	<%for(int i=0;i<images.length;i++){%>
 		images[<%=i%>] = '<%=images[i]%>';
 	<%}%>
 	
@@ -81,7 +84,7 @@
 						console.log($(window).scrollTop(),
 								$(document).height(), $(window).height());
 						//페이징 해서 붙이기
-						if (page < 10) {
+						if (page < <%=images.length %>) {
 							if ($(window).scrollTop() + 800 > ($(document)
 									.height() - $(window).height())) {
 								
@@ -96,7 +99,7 @@
 														+ '번 내용 </br>들어갈 곳</span></div></div></div></div>');
 							}
 
-						} else if (page == 10) { // 로딩이 끝났을때, 실제 DB연동에서는 page == images.size()-1
+						} else if (page == <%=images.length %>) { // 로딩이 끝났을때, 실제 DB연동에서는 page == images.size()-1
 							$(".appendd")
 									.append(
 											'<div class="trainers-entry"><h2>　</h2><h2>페이지의 끝입니다</h2></div></div>');
