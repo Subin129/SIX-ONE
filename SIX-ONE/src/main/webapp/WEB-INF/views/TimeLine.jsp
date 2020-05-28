@@ -6,19 +6,29 @@
 <%String[] images = (String[])request.getAttribute("images"); %>
 
 <!--  본문 -->
-<div class="col-md-3 col-md-offset-1 trainers-entry follow" style="padding-top:50px; width: 300px;background-color: aqua;">  
-							<h1>글 작성</h1></hr>
-							<h1>검색하기</h1></hr>
-						
-							<h1>어쩌고</h1></hr>
+<div class="col-md-3 col-md-offset-2 trainers-entry follow" style="padding-top:50px; width: 300px;background-color: aqua;">  
+						<button type="button" class="btn btn-warning  btn-block">글 작성하기</button>
+<button type="button" class="btn btn-default  btn-block">어쩌고저쩌고</button>
+
+
+
+<form class="form-inline" style="padding-top: 5px">
+  <div class="form-group">
+    <label class="sr-only" for="scrach">검색하기</label>
+    <input type="text" class="form-control" id="scrach" placeholder="검색하기" style="width: 210px;height:35px;">
+   <span class="glyphicon glyphicon-search" style="width: 30px;height:35px;padding-left:11px;padding-top:5px;font-size:30px"></span>
+  </div>
+</form>
+
+
 							<p style="color: black;">대충 따라오는 메s뉴</p>
 				</div>
-		<div class="col-md-6 col-md-offset-1 appendd" style="padding-top: 20px;">
+		<div class="col-md-6  appendd" style="padding-top: 20px;">
 			<div class="animate-box">
 				<div class="trainers-entry">
 					<div class="trainer-img"
 						style="background-image: url(${bbb}); height: 600px"></div>
-					<div class="desc">
+					<div class="desc" style="padding-top:10px">
 						<h3>처음에 로딩되는 게시물 아이디 들어갈곳</h3>123<span class="glyphicon glyphicon-heart"></span>123
 						<span> 내용 </br>들어갈 곳
 						</span>
@@ -78,7 +88,7 @@
 					function() {
 						//스크롤 따라오는 좌측메뉴 $(window).scrollTop()+30'px' 넣으면 왠진 모르겟는데 애가 미쳐돌아감
 						if ($(window).scrollTop() + 500 < ($(document).height() - $(window).height())) {
-							$('.follow').attr('style',('padding-top :'+ $(window).scrollTop()+'px; width: 300px') );
+							$('.follow').attr('style',('padding-top :'+ ($(window).scrollTop()+20)+'px; width: 300px') );
 						}
 						
 						console.log($(window).scrollTop(),

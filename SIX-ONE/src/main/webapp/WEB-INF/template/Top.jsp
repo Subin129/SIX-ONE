@@ -27,8 +27,6 @@
 	<link rel="stylesheet" href="<c:url value='/resources/css/animate.css' />">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="<c:url value='/resources/css/icomoon.css' />">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="<c:url value='/resources/css/bootstrap.css' />">
 
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="<c:url value='/resources/css/magnific-popup.css' />">

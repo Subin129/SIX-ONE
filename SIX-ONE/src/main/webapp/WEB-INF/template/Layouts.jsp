@@ -8,8 +8,7 @@
 	<script src="<c:url value='/resources/js/jquery.min.js' />"></script>
 	<!-- jQuery Easing -->
 	<script src="<c:url value='/resources/js/jquery.easing.1.3.js' />"></script>
-	<!-- Bootstrap -->
-	<script src="<c:url value='/resources/js/bootstrap.min.js' />"></script>
+
 	<!-- Waypoints -->
 	<script src="<c:url value='/resources/js/jquery.waypoints.min.js' />"></script>
 	<!-- Stellar Parallax -->
@@ -25,13 +24,7 @@
 	<script src="<c:url value='/resources/js/jquery.countTo.js' />"></script>
 	<!-- Main -->
 	<script src="<c:url value='/resources/js/main.js' />"></script>
-	<!-- 합쳐지고 최소화된 최신 CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-<!-- 부가적인 테마 -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
--->
+	
 
 <body>
 	<header id="siteTop">
@@ -84,5 +77,15 @@
 		<tiles:insertAttribute name="siteBottom"/>
 	</footer>
 	</div>
+		<!-- Bootstrap -->
+	
 </body>
+
+<script src="<c:url value='/resources/js/bootstrap.min.js' />"></script>
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
 </html>
