@@ -34,7 +34,7 @@ public class DAO {
 	
 	public String[] test() {
 	String[] images = new String[13]; 
-
+///asd
 	String sql = "SELECT * FROM test ORDER BY no asc";
 	int i = 0;
 	try {
