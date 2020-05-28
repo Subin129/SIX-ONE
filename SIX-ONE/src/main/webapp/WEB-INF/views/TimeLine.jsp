@@ -29,7 +29,7 @@
 					<div class="trainer-img"
 						style="background-image: url(${bbb}); height: 600px"></div>
 					<div class="desc" style="padding-top:10px">
-						<h3>처음에 로딩되는 게시물 아이디 들어갈곳</h3>123<span class="glyphicon glyphicon-heart"></span>123
+						<h3>처음에 로딩되는 게시물 아이디 들어갈곳</h3>1s23<span class="glyphicon glyphicon-heart"></span>123
 						<span> 내용 </br>들어갈 곳
 						</span>
 					</div>
