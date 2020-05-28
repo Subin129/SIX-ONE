@@ -14,23 +14,29 @@
 
 <form class="form-inline" style="padding-top: 5px">
   <div class="form-group">
-    <label class="sr-only" for="scrach">검색하기</label>
-    <input type="text" class="form-control" id="scrach" placeholder="검색하기" style="width: 210px;height:35px;">
-   <span class="glyphicon glyphicon-search" style="width: 30px;height:35px;padding-left:11px;padding-top:5px;font-size:30px"></span>
+    <label class="sr-only" for="searchtxt">검색하기</label>
+    <input type="text" class="form-control" id="searchtxt" placeholder="검색..." style="width: 230px;height:33px;">
+    
+   	
   </div>
+  <span id="searchbtn" class="glyphicon glyphicon-search" style="width:20px;height:35px;padding-left:8px;font-size:20px"></span>
 </form>
-
-
-							<p style="color: black;">대충 따라오는 메s뉴</p>
+<p style="color:gray;">실시간 인기 검색어</p>
 				</div>
-		<div class="col-md-6  appendd" style="padding-top: 20px;">
+				
+				
+				
+				
+		<div class="col-md-6  appendd" style="padding-top: 10px;">
 			<div class="animate-box">
 				<div class="trainers-entry">
 					<div class="trainer-img"
 						style="background-image: url(${bbb}); height: 600px"></div>
-					<div class="desc" style="padding-top:10px">
-						<h3>처음에 로딩되는 게시물 아이디 들어갈곳</h3>1s23<span class="glyphicon glyphicon-heart"></span>123
-						<span> 내용 </br>들어갈 곳
+					<div class="desc" >
+						
+						
+						<h3>처음에 로딩되는 게시물 아이디 들어갈곳</h3>
+						<span> 내용~~~~~~~ </br> 태그~~~~~
 						</span>
 					</div>
 				</div>
